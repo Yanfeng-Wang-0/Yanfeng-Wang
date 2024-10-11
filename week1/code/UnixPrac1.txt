@@ -1,0 +1,16 @@
+cd ~/Documents/CMEECoursework/week1/data
+
+#1.calculate the number of lines of three files
+echo "407228326.fasta: "; (cat 407228326.fasta; echo) | wc -l; echo "407228412.fasta: "; (cat 407228412.fasta; echo) | wc -l; echo "E.coli.fasta: "; (cat E.coli.fasta; echo) | wc -l
+
+#2.output all E.coli start from the second line 
+tail -n +2 E.coli.fasta
+
+#3.counting number of character after > of three files 
+echo "407228326.fasta: " ; grep -v "^>" 407228326.fasta | tr -d '\n' | wc -c ; echo "407228412.fasta: " ; grep -v "^>" 407228412.fasta | tr -d '\n' | wc -c ; echo "E.coli.fasta: "; grep -v "^>" E.coli.fasta | tr -d '\n' | wc -c
+
+#4.counting all ATGC sequence in E.coli
+grep -v "^>" E.coli.fasta | tr -d '\n' | grep -o "ATGC" | wc -l
+
+#5.calculate (A+T)/(G+C) of three files 
+echo "407228326.fasta: " ; echo "scale=4; $(grep -v "^>" 407228326.fasta | tr -d '\n' | grep -o "[AT]" | wc -l) / $(grep -v "^>" 407228326.fasta | tr -d '\n' | grep -o "[GC]" | wc -l)" | bc ; echo "407228412.fasta: " ; echo "scale=4; $(grep -v "^>" 407228412.fasta | tr -d '\n' | grep -o "[AT]" | wc -l) / $(grep -v "^>" 407228412.fasta | tr -d '\n' | grep -o "[GC]" | wc -l)" | bc ; echo "E.coli.fasta: "; echo "scale=4; $(grep -v "^>" E.coli.fasta | tr -d '\n' | grep -o "[AT]" | wc -l) / $(grep -v "^>" E.coli.fasta | tr -d '\n' | grep -o "[GC]" | wc -l)" | bc
