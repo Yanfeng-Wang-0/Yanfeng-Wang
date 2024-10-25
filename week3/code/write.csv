@@ -1,0 +1,29 @@
+MyData <- read.csv("../data/trees.csv")
+
+ls(pattern = "My*") # Check that MyData has appeared
+
+class(MyData)
+
+head(MyData) # Have a quick look at the data frame
+
+str(MyData) # Note the data types of the three columns
+
+MyData <- read.csv("../data/trees.csv", header = F) # Import ignoring headers
+
+head(MyData)
+
+MyData <- read.table("../data/trees.csv", sep = ',', header = TRUE) #another way
+
+head(MyData)
+
+MyData <- read.csv("../data/trees.csv", skip = 5) # skip first 5 lines
+
+write.csv(MyData, "../results/MyData.csv")
+
+dir("../results/") # Check if it worked
+
+write.table(MyData[1,], file = "../results/MyData.csv",append=TRUE) # append
+
+write.csv(MyData, "../results/MyData.csv", row.names=TRUE) # write row names
+
+write.table(MyData, "../results/MyData.csv", col.names=FALSE) # ignore col names
