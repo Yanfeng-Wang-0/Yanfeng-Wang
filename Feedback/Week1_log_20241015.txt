@@ -1,0 +1,297 @@
+Starting code feedback for Yanfeng, Week1
+
+Current Points = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 1.47 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: Feedback, week1, .git
+
+Found the following files in parent directory: README.md
+
+Checking for key files in parent directory...
+
+.gitignore missing, 1 pt deducted
+
+Current Points = 99
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+
+**********************************************************************
+# Yanfeng-Wang
+
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 1 weekly directories: week1
+
+The Week1 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK1...
+
+Found the following directories: code, results, data
+
+Found the following files: 
+
+Checking for readme file in weekly directory...
+
+README file missing, 1 pt deducted
+
+Current Points = 98
+
+Found following files in results directory: 1800-output.ssv, 1802-output.ssv, 1803-output.ssv, 1801-output.ssv...
+
+Ideally, Results directory should be empty other than, perhaps a .gitkeep. 
+
+ 0.5 pts deducted per results file 
+
+Current Points = 96.0
+
+Found 5 code files: UnixPrac1.txt, tabtocsv.sh, boilerplate.sh, csvtospace.sh, ConcatenateTwoFiles.sh
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file UnixPrac1.txt...
+
+File contents are:
+
+**********************************************************************
+cd ~/Documents/CMEECoursework/week1/data
+
+#1.calculate the number of lines of three files
+echo "407228326.fasta: "; (cat 407228326.fasta; echo) | wc -l; echo "407228412.fasta: "; (cat 407228412.fasta; echo) | wc -l; echo "E.coli.fasta: "; (cat E.coli.fasta; echo) | wc -l
+
+#2.output all E.coli start from the second line 
+tail -n +2 E.coli.fasta
+
+#3.counting number of character after > of three files 
+echo "407228326.fasta: " ; grep -v "^>" 407228326.fasta | tr -d '\n' | wc -c ; echo "407228412.fasta: " ; grep -v "^>" 407228412.fasta | tr -d '\n' | wc -c ; echo "E.coli.fasta: "; grep -v "^>" E.coli.fasta | tr -d '\n' | wc -c
+
+#4.counting all ATGC sequence in E.coli
+grep -v "^>" E.coli.fasta | tr -d '\n' | grep -o "ATGC" | wc -l
+
+#5.calculate (A+T)/(G+C) of three files 
+echo "407228326.fasta: " ; echo "scale=4; $(grep -v "^>" 407228326.fasta | tr -d '\n' | grep -o "[AT]" | wc -l) / $(grep -v "^>" 407228326.fasta | tr -d '\n' | grep -o "[GC]" | wc -l)" | bc ; echo "407228412.fasta: " ; echo "scale=4; $(grep -v "^>" 407228412.fasta | tr -d '\n' | grep -o "[AT]" | wc -l) / $(grep -v "^>" 407228412.fasta | tr -d '\n' | grep -o "[GC]" | wc -l)" | bc ; echo "E.coli.fasta: "; echo "scale=4; $(grep -v "^>" E.coli.fasta | tr -d '\n' | grep -o "[AT]" | wc -l) / $(grep -v "^>" E.coli.fasta | tr -d '\n' | grep -o "[GC]" | wc -l)" | bc
+
+**********************************************************************
+
+Testing UnixPrac1.txt...
+
+======================================================================
+Inspecting script file tabtocsv.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/sh
+# Author: yw4524@ic.ac.uk
+# Script: tabtocsv.sh
+# Description: substitute the tabs in the files with commas
+#
+# Saves the output into a .csv file
+# Arguments: 1 -> tab delimited file
+# Date: Oct 2024
+
+#check if input file exist
+if [$# -ne 1] ; then
+  echo "usage: $0 tab_delimited_file"
+  exit 1
+fi
+
+#result and cover excessive
+echo "Creating a comma delimited version of $1 ..."
+tr -s "\t" "," < "$1" > "${1%.txt}.csv"
+echo "Done!"
+exit
+**********************************************************************
+
+Testing tabtocsv.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Creating a comma delimited version of  ...
+Done!
+
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+tabtocsv.sh: line 11: [0: command not found
+tabtocsv.sh: line 18: : No such file or directory
+
+======================================================================
+Inspecting script file boilerplate.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/sh
+# Author: Yanfeng Wang yw4524@ic.ac.uk
+# Script: boilerplate.sh
+# Desc: simple boilerplate for shell scripts 
+# Arguments: none
+# Date: Oct 2024
+
+echo -e "\nThis is a shell script! \n"
+
+#exit
+
+
+**********************************************************************
+
+Testing boilerplate.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+
+This is a shell script! 
+
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00358s
+
+======================================================================
+Inspecting script file csvtospace.sh...
+
+File contents are:
+
+**********************************************************************
+cd ~/Documents/CMEECoursework/week1/data
+
+for input_file in *.csv;
+do
+# Create the output file name by replacing ".csv" with "-output.ssv"
+    output_file="$result_dir/${input_file%.csv}-output.ssv"
+    
+    echo "Converting $input_file to $output_file..."
+    tr "," " " < "$input_file" > "$output_file"
+    echo "$input_file converted successfully."
+done
+ 
+echo "Processed successfully."
+ 
+
+target_dir=~/Documents/CMEECourseWork/week1/data
+
+result_dir=~/Documents/CMEECourseWork/week1/results
+ 
+# Change to the target directory
+cd "$target_dir" || { echo "Error: Unable to change to directory $target_dir."; exit 1; }
+ 
+# Loop through all .csv files and convert them
+for input_file in *.csv;
+do
+# Create the output file name by replacing ".csv" with "-output.ssv"
+    output_file="$result_dir/${input_file%.csv}-output.ssv"
+    
+    echo "Converting $input_file to $output_file..."
+    tr "," " " < "$input_file" > "$output_file"
+    echo "$input_file converted successfully."
+done
+ 
+echo "Processed successfully."
+ 
+ 
+**********************************************************************
+
+Testing csvtospace.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Converting *.csv to /*-output.ssv...
+*.csv converted successfully.
+Processed successfully.
+Error: Unable to change to directory /home/mhasoba/Documents/CMEECourseWork/week1/data.
+
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+csvtospace.sh: line 1: cd: /home/mhasoba/Documents/CMEECoursework/week1/data: No such file or directory
+csvtospace.sh: line 9: *.csv: No such file or directory
+csvtospace.sh: line 21: cd: /home/mhasoba/Documents/CMEECourseWork/week1/data: No such file or directory
+
+======================================================================
+Inspecting script file ConcatenateTwoFiles.sh...
+
+File contents are:
+
+**********************************************************************
+
+if [$# -ne 3] ; then
+  echo "usage : $0 file_1 file_2 output_file"
+  exit 1 
+fi 
+
+cat "$1" > "$3"
+cat "$2" >> "$3"
+echo "Merged $1 &$2 into $3"
+cat "$3"
+
+**********************************************************************
+
+Testing ConcatenateTwoFiles.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Merged  & into 
+
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+ConcatenateTwoFiles.sh: line 2: [0: command not found
+ConcatenateTwoFiles.sh: line 7: : No such file or directory
+ConcatenateTwoFiles.sh: line 8: : No such file or directory
+cat: '': No such file or directory
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 3 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Points for the Week = 96.0
+
+NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
