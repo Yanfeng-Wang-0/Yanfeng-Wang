@@ -6,6 +6,7 @@
 
 # Clear the workspace to remove all objects from memory
 rm(list = ls())
+setwd("~/Documents/CMEECourseWork/week4/code")
 
 # Load the dataset containing annual mean temperature data
 load("../data/KeyWestAnnualMeanTemperature.RData")
@@ -43,7 +44,7 @@ p_value <- mean(random_corrs >= obs_corr)
 cat(sprintf("P-value from permutation test: %.4f\n", p_value))  # Print the p-value
 
 # Save a histogram of the random correlations to a PDF file
-pdf("../results/Florida_Correlation_Histogram.pdf", width = 15, height = 8)
+pdf("../results/Florida_Correlation_Histogram.pdf", width = 18, height = 10)
 hist_data <- hist(random_corrs, breaks = 30, plot = FALSE)  # Compute histogram data without plotting
 
 # Plot the histogram of random correlation coefficients
@@ -53,7 +54,7 @@ hist(
   main = "Distribution of Random Correlation Coefficients",
   xlab = "Correlation Coefficient", 
   ylab = "Frequency",
-  col = "lightblue",  # Bar color
+  col = "yellow",  # Bar color
   border = "black", 
   xlim = c(-0.6, 0.6),  # Set X-axis limits
   ylim = c(0, max(hist_data$counts) * 1.1)  # Set Y-axis limits dynamically
@@ -65,7 +66,7 @@ text(
   x = obs_corr, 
   y = max(hist_data$counts) * 1.05,  # Position above the histogram bars
   labels = sprintf("Observed correlation: %.4f\nP-value: %.4f", obs_corr, p_value),
-  col = "red", 
+  col = "blue", 
   pos = 2,  # Position the text to the left of the vertical line
   cex = 1, 
   font = 2
