@@ -66,7 +66,23 @@ This repository contains Python scripts, data, and results developed during Week
 
 ## Scripts
 
-### 1. **`basic_csv.py`**
+### 1. **`align_seqs.py`**
+
+- **Description**:  
+  Aligns two DNA sequences from `sequences.csv` and identifies the best alignment based on the number of matching bases. Outputs the result to `best_alignment.txt`.
+
+- **Features**:  
+  - Reads DNA sequences from a CSV file.  
+  - Calculates alignment scores for all possible alignments.  
+  - Finds the best alignment and writes the result to a text file.  
+
+- **Usage**:  
+  Run the script from the command line:  
+  ```bash
+  python code/python_align_seqs.py
+  ```
+
+### 2. **`basic_csv.py`**
 
 - **Description**:  
   Reads a CSV file (`testcsv.csv`) containing animal species data and creates a new file (`bodymass.csv`) with selected columns (species name and body mass).
@@ -82,7 +98,7 @@ This repository contains Python scripts, data, and results developed during Week
   python code/basic_csv.py
   ```
 
-### 2. **`basic_io1.py`**
+### 3. **`basic_io1.py`**
 
 - **Description**:  
   Reads a text file (`test.txt`) and prints each line twice:  
@@ -100,7 +116,7 @@ This repository contains Python scripts, data, and results developed during Week
   python code/basic_io1.py
   ```
 
-### 3. **`basic_io2.py`**
+### 4. **`basic_io2.py`**
 
 - **Description**:  
   Creates a list of numbers from 0 to 99 and writes them to a text file (`testout.txt`), with each number on a new line.
@@ -116,7 +132,7 @@ This repository contains Python scripts, data, and results developed during Week
   python code/basic_io2.py
   ```
 
-### 4. **`basic_io3.py`**
+### 5. **`basic_io3.py`**
 
 - **Description**:  
   Demonstrates saving and loading a Python dictionary using the `pickle` module.  
@@ -132,7 +148,7 @@ This repository contains Python scripts, data, and results developed during Week
   python code/basic_io3.py
   ```
 
-### 5. **`boilerplate.py`**
+### 6. **`boilerplate.py`**
 
 - **Description**:  
   A template script defining metadata, imports, and a `main` function as a starting point for new scripts.
@@ -147,23 +163,6 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script directly from the command line:  
   ```bash
   python code/boilerplate.py
-  ```
-
-### 6. **`cfexercise.py`**
-
-- **Description**:  
-  Defines utility functions to compute square roots, find the largest number, sort numbers, and calculate factorials.  
-
-- **Features**:  
-  - Computes square roots of numbers.  
-  - Finds the largest of two numbers.  
-  - Sorts three numbers in ascending order.  
-  - Calculates factorials using a recursive approach.  
-
-- **Usage**:  
-  Run the script and use its functions in an interactive Python shell:  
-  ```bash
-  python code/cfexercise.py
   ```
 
 ### 7. **`cfexercise1.py`**
@@ -328,20 +327,20 @@ This repository contains Python scripts, data, and results developed during Week
   python code/oaks.py
   ```
 
-### 17. **`python_align_seqs.py`**
+### 17. **`scope.py`**
 
 - **Description**:  
-  Aligns two DNA sequences from `sequence.csv` and identifies the best alignment based on the number of matching bases. Outputs the result to `best_alignment.txt`.
+  Demonstrates the scope and behavior of global and local variables in Python. Explores how variables declared inside and outside functions interact with each other and how the `global` keyword affects their values in different scopes. Highlights the impact of nested functions and variable shadowing on variable access and modification.
 
 - **Features**:  
-  - Reads DNA sequences from a CSV file.  
-  - Calculates alignment scores for all possible alignments.  
-  - Finds the best alignment and writes the result to a text file.  
+  - Demonstrates the difference between global and local scopes.  
+  - Shows how the `global` keyword modifies global variables from within functions.  
+  - Includes examples of variable shadowing and nested function behavior.  
 
 - **Usage**:  
-  Run the script from the command line:  
+  Run the script directly to observe variable interactions in the console:  
   ```bash
-  python code/python_align_seqs.py
+  python code/scope.py
   ```
 
 ### 18. **`sysargv.py`**
