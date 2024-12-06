@@ -26,10 +26,12 @@ This repository contains Python scripts, data, and results developed during Week
   ```bash
   git clone https://github.com/your-username/CMEECoursework.git
   cd CMEECoursework
+  ```
 
 2. (Optional) Ensure all scripts have execution permissions:
   ```bash
   chmod +x code/*.py
+  ```
 
 3. Verify your system has the required tools and dependencies installed (see below).
 
@@ -53,10 +55,12 @@ This repository contains Python scripts, data, and results developed during Week
 1. To filter oak species data from `TestOaksData.csv` and save the output to `JustOaksData.csv`:
   ```bash
   python code/oaks_debugme.py
+  ```
 
 2. To find the best DNA sequence alignment using sequence.csv:
   ```bash
   python code/python_align_seqs.py
+  ```
 
 ---
 
@@ -76,6 +80,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/basic_csv.py
+  ```
 
 ### 2. **`basic_io1.py`**
 
@@ -93,6 +98,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/basic_io1.py
+  ```
 
 ### 3. **`basic_io2.py`**
 
@@ -108,6 +114,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/basic_io2.py
+  ```
 
 ### 4. **`basic_io3.py`**
 
@@ -123,6 +130,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/basic_io3.py
+  ```
 
 ### 5. **`boilerplate.py`**
 
@@ -139,6 +147,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script directly from the command line:  
   ```bash
   python code/boilerplate.py
+  ```
 
 ### 6. **`cfexercise.py`**
 
@@ -155,6 +164,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script and use its functions in an interactive Python shell:  
   ```bash
   python code/cfexercise.py
+  ```
 
 ### 7. **`cfexercise1.py`**
 
@@ -170,6 +180,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script to use its functions in an interactive Python shell:  
   ```bash
   python code/cfexercise1.py
+  ```
  
 ### 8. **`cfexercise2.py`**
 
@@ -187,6 +198,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script to execute the control flow examples:  
   ```bash
   python code/cfexercise2.py
+  ```
 
 ### 9. **`control_flow.py`**
 
@@ -203,6 +215,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script to use its functions interactively:  
   ```bash
   python code/control_flow.py
+  ```
 
 ### 10. **`dictionary.py`**
 
@@ -217,6 +230,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/dictionary.py
+  ```
 
 ### 11. **`lc1.py`**
 
@@ -232,6 +246,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/lc1.py
+  ```
 
 ### 12. **`lc2.py`**
 
@@ -247,6 +262,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/lc2.py
+  ```
 
 ### 13. **`loops.py`**
 
@@ -263,6 +279,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script to observe loop operations in action:  
   ```bash
   python code/loops.py
+  ```
 
 ### 14. **`MyExampleScript.py`**
 
@@ -277,6 +294,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/MyExampleScript.py
+  ```
 
 ### 15. **`oaks_debugme.py`**
 
@@ -292,6 +310,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:
   ```bash
   python code/oaks_debugme.py
+  ```
 
 ### 16. **`oaks.py`**
 
@@ -307,6 +326,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script directly to see results printed to the console:  
   ```bash
   python code/oaks.py
+  ```
 
 ### 17. **`python_align_seqs.py`**
 
@@ -322,6 +342,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/python_align_seqs.py
+  ```
 
 ### 18. **`sysargv.py`**
 
@@ -337,6 +358,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script with additional arguments from the command line:  
   ```bash
   python code/sysargv.py arg1 arg2 arg3
+  ```
 
 ### 19. **`tuple.py`**
 
@@ -351,6 +373,7 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script from the command line:  
   ```bash
   python code/tuple.py
+  ```
 
 ### 20. **`using_name.py`**
 
@@ -366,5 +389,6 @@ This repository contains Python scripts, data, and results developed during Week
   Run the script directly from the command line:  
   ```bash
   python code/using_name.py
+  ```
 
 
