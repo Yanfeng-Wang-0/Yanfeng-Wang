@@ -26,10 +26,12 @@ This repository contains shell scripts and associated files developed during Wee
   ```bash
   git clone https://github.com/your-username/CMEECoursework.git
   cd CMEECoursework
+  ```
 
 2. (Optional) Ensure all scripts have execution permissions:
   ```bash
   chmod +x code/*.sh
+  ```
 
 3. Verify your system has the required tools and dependencies installed (see below).
 
@@ -54,10 +56,12 @@ This repository contains shell scripts and associated files developed during Wee
 1. To convert all CSV files in the `data/` directory to space-separated files:
   ```bash
   bash code/csvtospace.sh data results
+  ```
 
 2. To concatenate two files:
   ```bash
   bash code/ConcatenateTwoFiles.sh data/file1.txt data/file2.txt results/combined.txt
+  ```
 
 ---
 
@@ -85,6 +89,7 @@ This repository contains shell scripts and associated files developed during Wee
 - **Usage**:  
   ```bash
   bash ConcatenateTwoFiles.sh file_1 file_2 output_file
+  ```
 
 ---
 
@@ -101,6 +106,7 @@ This repository contains shell scripts and associated files developed during Wee
 - **Usage**:  
   ```bash
   bash csvtospace.sh input_directory results_directory
+  ```
 
 ---
 
@@ -116,3 +122,4 @@ This repository contains shell scripts and associated files developed during Wee
 - **Usage**:  
   ```bash
   bash tabtocsv.sh input_file
+  ```
