@@ -26,10 +26,12 @@ This repository contains R scripts, data, and results developed during Week 3 of
   ```bash
   git clone https://github.com/your-username/CMEECoursework.git
   cd CMEECoursework
+  ```
 
 2. (Optional) Ensure all scripts have execution permissions:
   ```bash
   chmod +x code/*.R
+  ```
 
 3. Verify your system has the required tools and dependencies installed (see below).
 
@@ -41,6 +43,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
 - **Required Libraries**: Some scripts may require additional R packages such as `ggplot2`, `reshape2`, and `MASS`. You can install these libraries using the following command in R:
   ```R
   install.packages(c("ggplot2", "reshape2", "MASS"))
+  ```
 
   ---
 
@@ -55,10 +58,12 @@ This repository contains R scripts, data, and results developed during Week 3 of
 1. To calculate row and column statistics for a random matrix:
   ```bash
   Rscript code/apply1.R
+  ```
 
 2. To perform operations on each row of a matrix using `SomeOperation`:
   ```bash
   Rscript code/apply2.R
+  ```
 
 ---
 
@@ -77,6 +82,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/apply1.R
+  ```
 
 ### 2. **`apply2.R`**
 - **Description**:  
@@ -91,6 +97,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/apply2.R
+  ```
 
 ### 3. **`basic_io.R`**
 - **Description**:  
@@ -105,6 +112,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/basic_io.R
+  ```
 
 ### 4. **`boilerplate.R`**
 - **Description**:  
@@ -119,6 +127,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/boilerplate.R
+  ```
 
 ### 5. **`break.R`**
 - **Description**:  
@@ -133,6 +142,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/break.R
+  ```
 
 ### 6. **`browse.R`**
 - **Description**:  
@@ -147,6 +157,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/browse.R
+  ```
 
 ### 7. **`control_flow.R`**
 - **Description**:  
@@ -161,6 +172,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/control_flow.R
+  ```
 
 ### 8. **`DataWrang.R`**
 - **Description**:  
@@ -176,6 +188,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/DataWrang.R
+  ```
 
 ### 9. **`Girko.R`**
 - **Description**:  
@@ -191,6 +204,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/Girko.R
+  ```
 
 ### 10. **`MyBar.R`**
 - **Description**:  
@@ -205,6 +219,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/MyBar.R
+  ```
 
 ### 11. **`next.R`**
 - **Description**:  
@@ -219,6 +234,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/next.R
+  ```
 
 ### 12. **`plotLin.R`**
 - **Description**:  
@@ -233,6 +249,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/plotLin.R
+  ```
 
 ### 13. **`preallocate.R`**
 - **Description**:  
@@ -249,6 +266,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/preallocate.R
+  ```
 
 ### 14. **`R_conditionals.R`**
 - **Description**:  
@@ -266,6 +284,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script and use the functions interactively in an R console:
   ```bash
   Rscript code/R_conditionals.R
+  ```
 
 ### 15. **`sample.R`**
 - **Description**:  
@@ -280,6 +299,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/sample.R
+  ```
 
 ### 16. **`TreeHeight.R`**
 - **Description**:  
@@ -294,6 +314,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/TreeHeight.R
+  ```
 
 ### 17. **`try.R`**
 - **Description**:  
@@ -308,6 +329,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/try.R
+  ```
 
 ### 18. **`Vectorize1.R`**
 - **Description**:  
@@ -322,6 +344,7 @@ This repository contains R scripts, data, and results developed during Week 3 of
   Run the script from the command line:  
   ```bash
   Rscript code/Vectorize1.R
+  ```
 
 
 
