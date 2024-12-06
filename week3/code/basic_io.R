@@ -1,12 +1,21 @@
-# A simple script to illustrate R input-output.  
-# Run line by line and check inputs outputs to understand what is happening  
+# Author: Yanfeng Wang (yw4524@ic.ac.uk)
+# File Name: basic_io.R
+# Description: demonstrates reading data, appending rows, and controlling the inclusion of row and column names when writing data to CSV files
+# Version: 0.0.1
+# Date: Oct 2024 
 
-MyData <- read.csv("../data/trees.csv", header = TRUE) # import with headers
+# Read the data from a CSV file located in the '../data/' directory and store it in 'MyData'
+# 'header = TRUE' specifies that the first row of the file contains column names
+MyData <- read.csv("../data/trees.csv", header = TRUE) 
 
-write.csv(MyData, "../results/MyData.csv") #write it out as a new file
+# Write the entire 'MyData' dataframe to a new CSV file in the '../results/' directory
+write.csv(MyData, "../results/MyData.csv") 
 
-write.table(MyData[1,], file = "../results/MyData.csv",append=TRUE) # Append to it
+# Append the first row of 'MyData' to the existing 'MyData.csv' file in the '../results/' directory
+write.table(MyData[1,], file = "../results/MyData.csv",append=TRUE) 
 
-write.csv(MyData, "../results/MyData.csv", row.names=TRUE) # write row names
+# Write the 'MyData' dataframe to 'MyData.csv' again, including row names
+write.csv(MyData, "../results/MyData.csv", row.names=TRUE) 
 
-write.table(MyData, "../results/MyData.csv", col.names=FALSE) # ignore column names
+# Write the 'MyData' dataframe to 'MyData.csv' again without including column names
+write.table(MyData, "../results/MyData.csv", col.names=FALSE) 

@@ -1,5 +1,16 @@
+# Author: Yanfeng Wang (yw4524@ic.ac.uk)
+# File Name: dictionary.py
+# Description: reads taxa and creates taxa_dic that groups the species by their orders
+# Version: 0.0.1
+# Date: Oct 2024 
+
+"""
+Description: reads taxa and creates taxa_dic that groups the species by their orders
+"""
+
+# List of tuples containing species and their corresponding taxonomic orders
 taxa = [ ('Myotis lucifugus','Chiroptera'),
-         ('Gerbillus henleyi','Rodentia',),
+         ('Gerbillus henleyi','Rodentia'),
          ('Peromyscus crinitus', 'Rodentia'),
          ('Mus domesticus', 'Rodentia'),
          ('Cleithrionomys rutilus', 'Rodentia'),
@@ -10,33 +21,20 @@ taxa = [ ('Myotis lucifugus','Chiroptera'),
          ('Canis lupus', 'Carnivora'),
         ]
 
-# Write a python script to populate a dictionary called taxa_dic derived from
-# taxa so that it maps order names to sets of taxa and prints it to screen.
-# 
-# An example output is:
-#  
-# 'Chiroptera' : set(['Myotis lucifugus']) ... etc. 
-# OR, 
-# 'Chiroptera': {'Myotis  lucifugus'} ... etc
-
-#### Your solution here #### 
-# Initialize an empty dictionary
+# Initialize an empty dictionary to group species by their order
 taxa_dic = {}
 
-# Populate the dictionary by iterating over the taxa list
+# Loop through each species and order in the list of tuples
 for species, order in taxa:
     if order not in taxa_dic:
-        taxa_dic[order] = set()  # Initialize a set if the order doesn't exist
-    taxa_dic[order].add(species)
+        taxa_dic[order] = set()  # Initialize a set if the order is not already in the dictionary
+    taxa_dic[order].add(species)  # Add the species to the set corresponding to the order
 
-# Print the dictionary
-print(taxa_dic) 
+# Print the dictionary that groups species by taxonomic order
+print(taxa_dic)
 
-# Now write a list comprehension that does the same (including the printing after the dictionary has been created)  
- 
-#### Your solution here #### 
-# Create the dictionary using list comprehension
+# Create the same dictionary using dictionary comprehension
 taxa_dic = {order: {species for species, o in taxa if o == order} for _, order in taxa}
 
-# Print the dictionary
+# Print the dictionary created using dictionary comprehension
 print(taxa_dic)
