@@ -14,10 +14,10 @@ This repository contains mini project for the CMEE program, specifically focusin
 4. **Report Generation**: Compiles a LaTeX report summarizing the results.
 
 ## Directory Structure
-- **`code/`**: Contains all script files (e.g., `.sh`, `.R`, `.tex`).  
-- **`data/`**: Contains raw and cleaned datasets.  
-- **`results/`**: Stores output files (e.g., CSVs, .png plots).  
-- **`sandbox/`**: A workspace for temporary testing and debugging.  
+- **`Code/`**: Contains all script files (e.g., `.sh`, `.R`, `.tex`).  
+- **`Data/`**: Contains raw and cleaned datasets.  
+- **`Results/`**: Stores output files (e.g., CSVs, .png plots).  
+- **`Sandbox/`**: A workspace for temporary testing and debugging.  
 
 ## Installation
 ### Prerequisites
