@@ -1,0 +1,83 @@
+HPC long practical feedback for Yanfeng Wang ( Yanfeng Wang ) 2025
+ 
+email : yw4524@ic.ac.uk
+username : yw4524
+ 
+Your final mark is : 81.47 %
+ 
+Mark allocation break down
+1) Technically correct answers to all questions worth 60 % of final grade
+Your mark :  52.8 /60
+2) Quality of free text answers worth 8 % of final grade
+Your mark :  4.6 /8
+3) Quality of graphical outputs worth 8 % of final grade
+Your mark :  8.5 /10
+4) Quality of code worth 8 % of final grade
+Your mark :  6 /8
+5) Answers to challenge questions worth 16 % of final grade
+Your mark :  9.7 /14
+ 
+Marks for main questions
+Q 0 :    3 / 3
+Q 1 :    2.5 / 4    comments: The quantitative result was correct but the text answer didn't attempt to give any reason for why the all adults and spread cases are different, unfortunately beyond this the text answer actually mixed up the two cases describing the all adults and spread results the wrong way around and showing a lack of understanding
+Q 2 :    2 / 3    comments: correct simulation but text is descriptive and still carries over the mistakes of the previous question
+Q 3 :    10 / 10
+Q 4 :    10 / 10
+Q 5 :    6.5 / 8    comments: text answer only explains why for the population size part of the question - we also needed to see a 'why' for the difference between all adults and spread population across life stages. The text answer confuses biological factors which are real but not in the model (genetic drift) with factors that are real and in the model (environmental fluctuations).
+Q 6 :    10 / 10
+Q 7 :    2 / 2
+Q 8 :    1 / 1
+Q 9 :    1 / 1
+Q 10 :    2 / 2
+Q 11 :    2 / 2
+Q 12 :    2 / 2
+Q 13 :    2 / 2
+Q 14 :    2 / 3    comments: text answer doesn't properly explain the reason for the decline just saying it's because of random extinctions isn't enough - needs to talk about lack of speciation to replace extinctions and why extinctions occur at all (random drift population sizes going to zero)
+Q 15 :    3 / 3
+Q 16 :    1 / 1
+Q 17 :    1 / 1
+Q 18 :    3 / 4    comments: descriptive and doesn't get into the reasons for the findings - otherwise excellent'
+Q 19 :    3 / 3
+Q 20 :    3 / 3
+Q 21 :    2 / 2
+Q 22 :    4 / 4
+Q 23 :    6 / 6
+Q 24 :    5 / 6    comments: ran for wrong speciation rate otherwise excellent
+Q 25 :    10 / 10
+Q 26 :    3 / 10    comments: the graphed result was incorrect (because of the data collation step not because of the simulations themselves) also the simulation parameters run were with a speciation rate of 0.1 instead of the speciation rate specifically assigned in class to each individual
+          ---------
+Total     102 / 116
+          ---------
+ 
+Marks for text quality :  4.6 /8
+Comments...
+In question 1 unfortunately this text describes the results the wrong way around and doesn't get into explaining why these results occur - it doesn't show any underlying understanding of the system being simulated.
+In question 2 descriptive only and with some mistakes as well
+In question 5 this is a generally very good answer though a bit incomplete in terms of the why and with a small error in understanding as well (see comments to the question)
+In question 6 excellent, clear and shows good understanding of what's going on
+In question 14 good but could have gone further to show understanding more clearly
+In question 18 needed to get more into the reasons for the findings
+In question 22 excellent to mention dynamic equilibrium, some details not quite spot on though - e.g. depending 'more on' something when actually depending 'only on' is correct
+ 
+Marks for graphics quality :  8.5 /10
+Comments...
+In question 1 excellent, only minor point is that axes are preferable to a grid
+In question 2 
+In question 5 same comments apply as for other graphs - attention to detail would have improved it e.g. removing '_' from labels and using a space instead
+In question 6 excellent, if being picky I'd suggest remove the box from around the legend but that's all I can think of
+In question 14 excellent, though axes preferred to a grid
+In question 18 
+In question 22 would have been nice to label octaves fully (1,2-3,4-7 etc.)
+In question 26 well made but would be improved by full text to describe each octave
+ 
+Marks for code quality :  6 /8
+Comments...
+well commented but some style errors particularly that the main.R file when sourced runs a lot of functions rather than just loading the functions into working memory as it was supposed to
+ 
+Marks for challenge questions :  9.7 /14
+Comments...
+challenge question A, very good but something is wrong with the data because NA is coming up in the graph - a higher resolution graph would have been better
+challenge question B, good attempt but the equilibrium time is a substantial overestimate. Graph could have been neater with axes no grid and maybe a line to show where equilibrium occurs
+challenge question C, excellent, might be nice to change the x axis range
+challenge question D, excellent, might be nice to change the x axis range
+good start but the coalescence_simulation function doesn't give the correct answer and the main code didn't produce a result in reasonable time, not challengeE graph handed in, challenge question E, good start but the coalescence_simulation function doesn't give the correct answer and the main code didn't produce a result in reasonable time, not challengeE graph handed in
