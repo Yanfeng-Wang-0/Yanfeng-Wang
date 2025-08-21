@@ -1,0 +1,35 @@
+Unit checklist
+
+SIF
+RAW : mW/m2/nm/sr
+
+PAR
+RAW : mol m-2 d-1 (PAR)
+Conversion : 1 W m-2 = 0.3940 mol m-2 d-1
+
+Day 
+RAW : min
+
+lambda
+RAW : nm
+
+Focus 1-10 no crops etc. ----landcover
+for a certain landcover (latitude evolution time plots)
+y axis --- latitude/phiF/phiP/SIF  x axis --- months
+anomalies -- El Nino 2015
+trends p value r square 
+month by months 
+#
+get SIF from GOME in HPC 
+compare it with OCO2
+regression between 
+
+plot and abstract 
+
+6000 * 0.7
+abstract 600
+introduction 600
+methodology 1200
+results 600
+discusion 3000
+conclusion 600
